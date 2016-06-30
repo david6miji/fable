@@ -2580,9 +2580,17 @@ void led_specan()
 
 int main()
 {
+	
 	ubertooth_init();
 	clkn_init();
 	ubertooth_usb_init(vendor_request_handler);
+	
+//	while (1) {
+//		wait(10);
+//		USRLED_SET;
+//		wait(10);
+//		USRLED_CLR;
+//	}	
 
 	while (1) {
 		handle_usb(clkn);

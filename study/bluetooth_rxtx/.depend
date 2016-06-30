@@ -1,0 +1,78 @@
+bluetooth_rxtx.o: bluetooth_rxtx.c /usr/include/newlib/string.h \
+ /usr/include/newlib/_ansi.h /usr/include/newlib/newlib.h \
+ /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/reent.h \
+ /usr/include/newlib/_ansi.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h \
+ /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/cdefs.h \
+ /usr/include/newlib/sys/string.h ubertooth.h lpc17.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \
+ /usr/include/newlib/stdint.h /usr/include/newlib/sys/_intsup.h \
+ /usr/include/newlib/sys/_stdint.h types.h cc2400.h ubertooth_interface.h \
+ ubertooth_usb.h bluetooth.h bluetooth_le.h cc2400_rangetest.h ego.h
+bluetooth.o: bluetooth.c bluetooth.h ubertooth.h lpc17.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \
+ /usr/include/newlib/stdint.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/_intsup.h \
+ /usr/include/newlib/sys/_stdint.h types.h cc2400.h ubertooth_interface.h
+bluetooth_le.o: bluetooth_le.c bluetooth_le.h ubertooth.h lpc17.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \
+ /usr/include/newlib/stdint.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/_intsup.h \
+ /usr/include/newlib/sys/_stdint.h types.h cc2400.h ubertooth_interface.h
+ubertooth_usb.o: ubertooth_usb.c usbapi.h type.h usbstruct.h usbhw_lpc.h \
+ ubertooth_usb.h ubertooth.h lpc17.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \
+ /usr/include/newlib/stdint.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/_intsup.h \
+ /usr/include/newlib/sys/_stdint.h types.h cc2400.h ubertooth_interface.h
+cc2400_rangetest.o: cc2400_rangetest.c cc2400_rangetest.h ubertooth.h \
+ lpc17.h /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \
+ /usr/include/newlib/stdint.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/_intsup.h \
+ /usr/include/newlib/sys/_stdint.h types.h cc2400.h ubertooth_interface.h
+ego.o: ego.c ego.h ubertooth.h lpc17.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \
+ /usr/include/newlib/stdint.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/_intsup.h \
+ /usr/include/newlib/sys/_stdint.h types.h cc2400.h ubertooth_interface.h
+usb_serial.o: usb_serial.c ubertooth.h lpc17.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \
+ /usr/include/newlib/stdint.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/_intsup.h \
+ /usr/include/newlib/sys/_stdint.h types.h cc2400.h ubertooth_interface.h \
+ usb_serial.h usbapi.h type.h usbstruct.h serial_fifo.h \
+ /usr/include/newlib/string.h /usr/include/newlib/_ansi.h \
+ /usr/include/newlib/newlib.h /usr/include/newlib/sys/config.h \
+ /usr/include/newlib/machine/ieeefp.h /usr/include/newlib/sys/reent.h \
+ /usr/include/newlib/_ansi.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h \
+ /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
+ /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/cdefs.h \
+ /usr/include/newlib/sys/string.h
+serial_fifo.o: serial_fifo.c type.h serial_fifo.h
+LPC17xx_Startup.o: LPC17xx_Startup.c lpc17.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \
+ /usr/include/newlib/stdint.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/_intsup.h \
+ /usr/include/newlib/sys/_stdint.h
+LPC17xx_Interrupts.o: LPC17xx_Interrupts.c
+ubertooth.o: ubertooth.c ubertooth.h lpc17.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \
+ /usr/include/newlib/stdint.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/_intsup.h \
+ /usr/include/newlib/sys/_stdint.h types.h cc2400.h ubertooth_interface.h
+usbcontrol.o: usbcontrol.c type.h debug.h usbstruct.h usbapi.h
+usbinit.o: usbinit.c type.h debug.h usbhw_lpc.h usbapi.h usbstruct.h
+usbhw_lpc.o: usbhw_lpc.c type.h debug.h usbhw_lpc.h usbapi.h usbstruct.h
+usbstdreq.o: usbstdreq.c type.h debug.h usbstruct.h usbapi.h usbhw_lpc.h

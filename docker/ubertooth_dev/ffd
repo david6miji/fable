@@ -1,0 +1,3 @@
+#!/bin/bash
+docker run --name ubertooth_dev --rm -it --privileged --net=host -v /dev/bus/usb:/dev/bus/usb -v $(pwd):/work  ubertooth_dev:latest
+

@@ -124,6 +124,7 @@ clean:
 	rm -f *.bak
 	rm -f *.map
 	rm -f *.o
+	rm -f *.d
 	rm -f $(OBJS)
 	rm -f $(TARGET).hex $(TARGET).bin $(TARGET).srec $(TARGET).dfu
 	rm -f $(TARGET).lss $(TARGET).sym core

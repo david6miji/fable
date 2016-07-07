@@ -49,6 +49,16 @@ RUN apt-get install -y gcc-arm-none-eabi
 
 RUN apt-get install -y  usbutils
 
+RUN apt-get install -y build-essential libudev-dev
+
+RUN apt-get install -y curl
+RUN curl -sL https://deb.nodesource.com/setup_4.x | bash -
+RUN apt-get install -y nodejs
+
+RUN npm install webpack -g  
+RUN npm install gulp -g
+
 WORKDIR /work/
 CMD ["bash"]
+
 
